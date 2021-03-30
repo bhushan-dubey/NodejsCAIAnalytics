@@ -7,11 +7,11 @@ const port =  process.env.PORT || 3000
 app.use(bodyParser.json())
 app.post('/salesbyregion',(req,res)=>{
     var typeofChart = req.body.ctype;
-    var demourl = 'https://dev01xxxxxtrial.hanatrial.ondemand.com/sap/hana/democontent/epm/services/salesByRegion.xsodata/SalesByRegion';
+    var demourl = 'https://208.85.249.167:4303/sap/hana/democontent/epm/services/salesByRegion.xsodata/SalesByRegion';
  var headers = {
        'Content-Type': 'application/json',
        'Accept': 'application/json',
-       'Authorization': 'Basic c3lzdGVtOld42GNvbWUx',
+       'Authorization': 'Basic U1lTVEVNOkNyYXZlQDEyMw==',
    };
    var options = { method: 'GET',
      url: demourl,
